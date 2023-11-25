@@ -1,8 +1,6 @@
 # Utilities
 Utilidades que eu provavelmente vou usar  pra resolver algum BO.
 
-
-
 # Apagar Usuário Windows
 Abre o CMD como administrador.
 
@@ -115,3 +113,5 @@ Para abrir o CMD no setup de inicialização do Windows uso o atalho `Shift + F1
 # Ravita Windows por CMD
 ## Abra o CMD em permissões de administrador e execute o seguinte comando -  `irm https://massgrave.dev/get | iex`
 
+# DESATIVAR VIRTUALIZATION-BASED SECURITY 
+`bcdedit /set hypervisorlaunchtype off`
