@@ -4,7 +4,7 @@ Utilidades que eu provavelmente vou usar  pra resolver algum BO.
 # Apagar Usuário Windows
 Abre o CMD como administrador.
 
-## Obs: Fique atento para não apagar o único usuário com permissões de Administrador, caso tenha-o feito, formatação será necessária(eu acho).
+## Obs: Fique atento para não apagar o único usuário com permissões de Administrador, caso tenha-o feito, formatação obrigatória(eu acho).
 
 ### Comandos:
 
@@ -110,8 +110,15 @@ Para abrir o CMD no setup de inicialização do Windows uso o atalho `Shift + F1
 
 
 
-# Ravita Windows por CMD
+# Ativar/Baixar o Windows/Office por CMD
 ## Abra o CMD em permissões de administrador e execute o seguinte comando -  `irm https://massgrave.dev/get | iex`
 
-# DESATIVAR VIRTUALIZATION-BASED SECURITY 
+#  Segurança Baseada em Virtualização
+## Ativar
+`bcdedit /set hypervisorlaunchtype auto`
+
+## Desativar
 `bcdedit /set hypervisorlaunchtype off`
+
+## Verificar Estado
+`Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-Hypervisor`
