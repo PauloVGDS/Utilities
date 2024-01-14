@@ -9,9 +9,7 @@ Abre o CMD como administrador.
 ### Comandos:
 
 **net user** - Mostra todos os usuários do computador.
-
 **net user [nome de algum usuário] /active:no** - Ele desativa um usuário (deixa de aparecer ele como opção).
-
 **net user /delete** - Ele exclui o usuário permanentemente.
 
 
@@ -96,17 +94,17 @@ Abre o CMD como administrador.
 
 **UNIQUEID** - Exibe ou define o identificador da GPT (Tabela de Partição GUID) ou a assinatura do MBR (Registro Mestre de Inicialização) de um disco.
 
+
 ## Sequência de comandos para converter uma partição de GPT para MBR (ou o contrário):
 
 **Obs:** O passo 4 irá apagar todos os arquivos e configurações da partição selecionada, logo caso necessário faça backup.
+Para abrir o CMD no setup de inicialização do Windows uso o atalho `Shift + F10`.
 
 1. Entra na ferramenta - `diskpart`
 2. Lista as partições disponíveis - `list disk`
 3. Seleciona a partição desejada - `select disk [número da partição]`
 4. Formata a partição já selecionada - `clean`
 5. Converter para GPT (pode ser feito o contrário) - `convert gpt`
-
-Para abrir o CMD no setup de inicialização do Windows uso o atalho `Shift + F10`.
 
 
 
@@ -116,9 +114,16 @@ Para abrir o CMD no setup de inicialização do Windows uso o atalho `Shift + F1
 #  Segurança Baseada em Virtualização
 ## Ativar
 `bcdedit /set hypervisorlaunchtype auto`
-
 ## Desativar
 `bcdedit /set hypervisorlaunchtype off`
-
 ## Verificar Estado
 `Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-Hypervisor`
+
+
+
+# Alterar nome de usuário windows
+
+1. **Win + R**
+2. Digitar `netplwiz`
+3. Acessar as **Propriedades** do usuário que desejar alterar o nome
+
