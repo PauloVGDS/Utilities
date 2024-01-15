@@ -127,3 +127,13 @@ Para abrir o CMD no setup de inicialização do Windows uso o atalho `Shift + F1
 2. Digitar `netplwiz`
 3. Acessar as **Propriedades** do usuário que desejar alterar o nome
 
+
+
+# Desativar atualizações do Windows
+
+1. **Win + R**
+2. Digite `services.msc` e pressione Enter.
+3. Localize o serviço chamado "Windows Update".
+4. Clique duas vezes sobre ele para abrir as propriedades.
+5. No campo "Tipo de inicialização", escolha "Desativado".
+6. Clique em "Parar" para interromper o serviço imediatamente.
