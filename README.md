@@ -9,7 +9,9 @@ Abre o CMD como administrador.
 ### Comandos:
 
 **net user** - Mostra todos os usuários do computador.
+
 **net user [nome de algum usuário] /active:no** - Ele desativa um usuário (deixa de aparecer ele como opção).
+
 **net user /delete** - Ele exclui o usuário permanentemente.
 
 
