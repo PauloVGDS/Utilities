@@ -4,21 +4,21 @@ Utilidades que eu provavelmente vou usar  pra resolver algum BO.
 # Apagar Usuário Windows
 Abre o CMD como administrador.
 
-## Obs: Fique atento para não apagar o único usuário com permissões de Administrador, caso tenha-o feito, formatação obrigatória(eu acho).
+**Obs: Fique atento para não apagar o único usuário com permissões de Administrador, caso tenha-o feito, formatação obrigatória(eu acho).**
 
 ### Comandos:
 
 **net user** - Mostra todos os usuários do computador.
 
-**net user [nome de algum usuário] /active:no** - Ele desativa um usuário (deixa de aparecer ele como opção).
+**net user [nome de algum usuário] /active:no** - Desativa um usuário (deixa de aparecer ele como opção).
 
-**net user /delete** - Ele exclui o usuário permanentemente.
+**net user /delete** - Exclui o usuário permanentemente.
 
-
+<hr>
 
 # Conversão de método de particionamento de disco
 
-## Microsoft DiskPart versão 10.0.19041.964
+### Microsoft DiskPart versão 10.0.19041.964
 
 **ACTIVE** - Marcar a partição selecionada como ativa.
 
@@ -97,10 +97,11 @@ Abre o CMD como administrador.
 **UNIQUEID** - Exibe ou define o identificador da GPT (Tabela de Partição GUID) ou a assinatura do MBR (Registro Mestre de Inicialização) de um disco.
 
 
-## Sequência de comandos para converter uma partição de GPT para MBR (ou o contrário):
 
-**Obs:** O passo 4 irá apagar todos os arquivos e configurações da partição selecionada, logo caso necessário faça backup.
-Para abrir o CMD no setup de inicialização do Windows uso o atalho `Shift + F10`.
+# Sequência de comandos para converter uma partição de GPT para MBR (ou o contrário):
+
+**Obs: O passo 4 irá apagar todos os arquivos e configurações da partição selecionada, logo caso necessário faça backup.
+Para abrir o CMD no setup de inicialização do Windows uso o atalho `Shift + F10`.**
 
 1. Entra na ferramenta - `diskpart`
 2. Lista as partições disponíveis - `list disk`
@@ -108,20 +109,24 @@ Para abrir o CMD no setup de inicialização do Windows uso o atalho `Shift + F1
 4. Formata a partição já selecionada - `clean`
 5. Converter para GPT (pode ser feito o contrário) - `convert gpt`
 
-
+<hr>
 
 # Ativar/Baixar o Windows/Office por CMD
-## Abra o CMD em permissões de administrador e execute o seguinte comando -  `irm https://massgrave.dev/get | iex`
+**Abra o CMD em permissões de administrador**
+- Execute o seguinte comando -  `irm https://massgrave.dev/get | iex`
+- Selecione as opções para o procedimento desejado.
+
+<hr>
 
 #  Segurança Baseada em Virtualização
-## Ativar
-`bcdedit /set hypervisorlaunchtype auto`
-## Desativar
-`bcdedit /set hypervisorlaunchtype off`
-## Verificar Estado
-`Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-Hypervisor`
+1. Verificar Estado
+  `Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-Hypervisor`
+2. Ativar
+  `bcdedit /set hypervisorlaunchtype auto`
+3. Desativar
+  `bcdedit /set hypervisorlaunchtype off`
 
-
+<hr>
 
 # Alterar nome de usuário windows
 
@@ -129,7 +134,7 @@ Para abrir o CMD no setup de inicialização do Windows uso o atalho `Shift + F1
 2. Digitar `netplwiz`
 3. Acessar as **Propriedades** do usuário que desejar alterar o nome
 
-
+<hr>
 
 # Desativar atualizações do Windows
 
