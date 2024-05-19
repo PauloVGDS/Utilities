@@ -144,3 +144,11 @@ Para abrir o CMD no setup de inicialização do Windows uso o atalho `Shift + F1
 4. Clique duas vezes sobre ele para abrir as propriedades.
 5. No campo "Tipo de inicialização", escolha "Desativado".
 6. Clique em "Parar" para interromper o serviço imediatamente.
+
+<hr>
+
+# Comando para baixar qualquer programa
+1. Abra o powershell como ADM
+2. Execute esse comando `iwr -useb https://christitus.com/win | iex`
+3. Escolha as opções para instalar.
+
