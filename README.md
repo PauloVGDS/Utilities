@@ -82,3 +82,8 @@ Para abrir o CMD no setup de inicialização do Windows uso o atalho `Shift + F1
 2. Execute esse comando `iwr -useb https://christitus.com/win | iex`
 3. Escolha as opções para instalar.
 
+<hr>
+
+# Adaptadores de rede do Windows
+1. **Win + R**
+2. Digite `ncpa.cpl`
