@@ -86,4 +86,4 @@ Para abrir o CMD no setup de inicialização do Windows uso o atalho `Shift + F1
 
 # Adaptadores de rede do Windows
 1. **Win + R**
-2. Digite `ncpa.cpl`
+2. Digite `ncpa.cpl` ou `control netconnections`
