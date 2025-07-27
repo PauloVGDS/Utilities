@@ -43,7 +43,7 @@ Para abrir o CMD no setup de inicialização do Windows uso o atalho `Shift + F1
 
 # Ativar/Baixar o Windows/Office por CMD
 **Abra o CMD em permissões de administrador**
-- Execute o seguinte comando -  `irm https://massgrave.dev/get | iex`
+- Execute o seguinte comando -  `irm https://get.activated.win | iex`
 - Selecione as opções para o procedimento desejado.
 
 <hr>
